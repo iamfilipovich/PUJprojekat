@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pujprojekat.controller.UserController">
+   <children>
+      <fx:include source="sidenavigation.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="133.0" text="Osobni podaci" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userFirstName_txt" prefHeight="25.0" prefWidth="192.0" promptText="ime" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0" />
+            <TextField fx:id="userLastName_txt" prefHeight="25.0" prefWidth="192.0" promptText="prezime" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="80.0" />
+            <Label prefHeight="18.0" prefWidth="134.0" text="Korisnički podaci" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userUsername_txt" promptText="Korisničko ime" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="40.0" />
+            <Button fx:id="userAdd_btn" mnemonicParsing="false" onAction="#onAdd" text="Dodaj" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="40.0" />
+            <Button fx:id="userDelete_btn" mnemonicParsing="false" onAction="#onDelete" text="Izbriši" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="40.0" />
+            <PasswordField fx:id="userPassword_txt" promptText="Lozinka" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="80.0" />
+            <TextField fx:id="userSalary_txt" prefHeight="25.0" prefWidth="192.0" promptText="Plaća" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0" />
+            <Button fx:id="userEdit_btn" mnemonicParsing="false" onAction="#onEdit" text="Uredi" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="40.0" />
+            <ChoiceBox fx:id="userType_cb" prefWidth="150.0" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="120.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+         <children>
+            <TableView fx:id="table" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="firstName_tc" prefWidth="91.0" text="Ime" />
+                  <TableColumn fx:id="lastName_tc" prefWidth="113.0" text="Prezime" />
+                  <TableColumn fx:id="type_tc" prefWidth="114.0" text="Tip korisnika" />
+                  <TableColumn fx:id="salary_tc" prefWidth="75.0" text="Plaća" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

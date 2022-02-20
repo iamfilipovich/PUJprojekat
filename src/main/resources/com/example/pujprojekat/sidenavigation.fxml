@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pujprojekat.controller.SideNavigationController">
+   <children>
+      <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button fx:id="addMember_btn" mnemonicParsing="false" onAction="#onAddMember" prefHeight="80.0" prefWidth="150.0" text="Dodaj člana" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="addUser_btn" mnemonicParsing="false" onAction="#onAddUser" prefHeight="80.0" prefWidth="150.0" text="Dodaj zaposlenika" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="suplement_btn" mnemonicParsing="false" onAction="#onAddSupplement" prefHeight="80.0" prefWidth="150.0" text="Suplementi" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="190.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="activity_btn" mnemonicParsing="false" onAction="#onAddActivity" prefHeight="80.0" prefWidth="150.0" text="Prisutnost" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="280.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="FIM GYM" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Button fx:id="logout_btn" mnemonicParsing="false" onAction="#onLogout" prefHeight="30.0" prefWidth="100.0" text="ODJAVA" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="activeUser" text="Aktivni korisnik" AnchorPane.rightAnchor="154.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane style="-fx-background-image: C:\Users\Korisnik\Desktop\PUJ\gym.png" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <ImageView fitHeight="414.0" fitWidth="490.0" layoutX="189.0" layoutY="69.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="189.0" AnchorPane.rightAnchor="151.0" AnchorPane.topAnchor="69.0">
+               <image>
+                  <Image url="@images/gym.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

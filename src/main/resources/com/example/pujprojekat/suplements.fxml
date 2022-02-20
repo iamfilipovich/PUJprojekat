@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pujprojekat.controller.SupplementsController">
+   <children>
+      <fx:include source="sidenavigation.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Button fx:id="sellSupplement_btn" mnemonicParsing="false" onAction="#sellSupplement" text="Prodaj" AnchorPane.leftAnchor="654.0" AnchorPane.topAnchor="157.0" />
+            <Button fx:id="addSupplement_btn" mnemonicParsing="false" onAction="#addSupplement" text="Dodaj " AnchorPane.leftAnchor="657.0" AnchorPane.topAnchor="428.0" />
+            <TextField fx:id="addSupplementName_txt" promptText="naziv proizvoda" AnchorPane.leftAnchor="607.0" AnchorPane.topAnchor="303.0" />
+            <TextField fx:id="addSupplementPrice_txt" promptText="cijena " AnchorPane.leftAnchor="607.0" AnchorPane.topAnchor="348.0" />
+            <TextField fx:id="addSupplementAmount_txt" promptText="količina" AnchorPane.leftAnchor="607.0" AnchorPane.topAnchor="393.0" />
+            <Label text="Dodaj suplement" AnchorPane.leftAnchor="607.0" AnchorPane.topAnchor="253.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amountToSell_txt" promptText="količina" AnchorPane.leftAnchor="609.0" AnchorPane.topAnchor="116.0" />
+            <Label layoutX="607.0" layoutY="5.0" text="Prodaj suplement" AnchorPane.leftAnchor="607.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="supplementToSell_cb" prefWidth="150.0" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="76.0" />
+            <ChoiceBox fx:id="memberToSell_cb" prefWidth="150.0" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="40.0" />
+            <Label text="Member" AnchorPane.rightAnchor="226.0" AnchorPane.topAnchor="44.0" />
+            <Label text="Suplement" AnchorPane.rightAnchor="226.0" AnchorPane.topAnchor="80.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <TableView fx:id="table" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="supplementName_tc" prefWidth="105.0" text="Naziv" />
+                  <TableColumn fx:id="supplementPrice_tc" prefWidth="72.0" text="Cijena" />
+                  <TableColumn fx:id="supplementAmount_tc" prefWidth="81.0" text="Količina" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
